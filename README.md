@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="assets/title.png" alt="Banner">
+  <img src="assets/title.png" alt="overview" width="450">
 </p>
 
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red?style=flat-square&logo=arxiv)](https://arxiv.org/pdf/2505.00212)
-[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow?style=flat-square&logo=huggingface)](https://huggingface.co/datasets/Kevin355/Who_and_When)
-
-
-## 🏆 Media Coverage
-### [[Synced (机器之心)](https://mp.weixin.qq.com/s/etweZ18bWWVz7thglMdGXA)]&nbsp;&nbsp;&nbsp;[[AIEra (新智元)](https://mp.weixin.qq.com/s/dIhJj6Z6WmBAobM3Ay1YjQ)]&nbsp;&nbsp;&nbsp;[[QbitAI (量子位)](https://mp.weixin.qq.com/s/6bmoyg2Pho28rYzgjdbFYA)]
+<p align="center">
+  <a href="https://img.shields.io/badge/License-MIT-blue?style=flat-square">License</a> •
+  <a href="https://arxiv.org/pdf/2505.00212">Paper</a> •
+  <a href="https://huggingface.co/datasets/Kevin355/Who_and_When">Doc</a>
+  <a href="https://mp.weixin.qq.com/s/etweZ18bWWVz7thglMdGXA">Synced (机器之心)</a>
+  <a href="https://mp.weixin.qq.com/s/dIhJj6Z6WmBAobM3Ay1YjQ">AIEra (新智元)</a>
+  <a href="https://mp.weixin.qq.com/s/6bmoyg2Pho28rYzgjdbFYA">QbitAI (量子位)</a>
+</p>
 
 
 > [!IMPORTANT]
-> If you find this project helpful, please consider giving us a ⭐️! It motivates us to keep improving.
-
+> If you find this project helpful, please consider giving us a ⭐️!
 
 ## 🧐 Overview
 
