@@ -524,7 +524,7 @@
     "question": "What's the last line of the rhyme under the flavor name on the headstone visible in the background of the photo of the oldest flavor's headstone in the Ben & Jerry's online flavor graveyard as of the end of 2022?",
     "ground_truth": "So we had to let it die.",
     "is_corrected": false,
-    "mistake_agent": "Websurfer",
+    "mistake_agent": "WebSurfer",
     "mistake_reason": "The agent should recognize that the website has clickable and expandable tabs containing the full rhyme for each flavor.",
     "mistake_step": "24",
     "question_ID": "624cbf11-6a41-4692-af9c-36b3e5ca3130",

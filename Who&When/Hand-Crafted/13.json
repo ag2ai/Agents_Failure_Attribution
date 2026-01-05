@@ -217,7 +217,7 @@
 "ground_truth": "31.67",
 "is_corrected": false,
 "question_ID":"9baaa267c95f9d8b75741ee9169c50563d297cfa592c20deaffd30dbc5984c74",
-"mistake_agent": "Websurfer",
+"mistake_agent": "WebSurfer",
 "mistake_step": "12",
 "mistake_reason": "The websurfer did not actually enter the location and click the view. Therefore the website keeps on the same page and the same OCR result. If the location is correctly entered, the website link will change."
 }
