@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems.">
+  <meta name="keywords" content="Failure Attribution, LLM Multi-Agent Systems">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://skzhang1.github.io/">Shaokun Zhang🧐😎</a><sup>1</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="http://mingyin1.github.io/">Ming Yin🧐</a><sup>2</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://jieyuz2.github.io/">Jieyu Zhang</a><sup>3</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://leoljl.github.io">Jiale Liu</a><sup>1</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://justinhhhh.github.io/">Zhiguang Han</a><sup>4</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://zjysteven.github.io/">Jingyang Zhang</a><sup>2</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://www.beibinli.com/">Beibin Li</a><sup>6</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/chi-wang-autogen/">Chi Wang</a><sup>5</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://huazhengwang.github.io/">Huazheng Wang</a><sup>7</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://ece.duke.edu/people/yiran-chen/">Yiran Chen</a><sup>2</sup></span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://qingyun-wu.github.io">Qingyun Wu😎</a><sup>1</sup>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Pennsylvania State University</span>&nbsp;&nbsp;
+              <span class="author-block"><sup>2</sup>Duke University</span>&nbsp;&nbsp;
+              <span class="author-block"><sup>3</sup>University of Washington</span>&nbsp;&nbsp;
+              <span class="author-block"><sup>7</sup>Oregon State University</span>
+              <span class="author-block"><sup>4</sup>Nanyang Technological University</span>&nbsp;&nbsp;
+              <span class="author-block"><sup>5</sup>Google DeepMind</span>&nbsp;&nbsp;
+              <span class="author-block"><sup>6</sup>XAI</span>&nbsp;&nbsp;
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">🧐 Equal contributions </span>&nbsp;&nbsp;&nbsp;
+              <span class="author-block">😎 Corresponding authors </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2505.00212" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/ag2ai/Agents_Failure_Attribution"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/Kevin355/Who_and_When" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://mp.weixin.qq.com/s/etweZ18bWWVz7thglMdGXA" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-newspaper"></i>
+                    </span>
+                    <span>Synced (机器之心)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://mp.weixin.qq.com/s/dIhJj6Z6WmBAobM3Ay1YjQ" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-newspaper"></i>
+                    </span>
+                    <span>AIEra (新智元)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://mp.weixin.qq.com/s/6bmoyg2Pho28rYzgjdbFYA" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-newspaper"></i>
+                    </span>
+                    <span>QbitAI (量子位)</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              Failure attribution in LLM multi-agent systems—identifying the agent and step responsible for task failures—provides crucial clues for systems debugging but remains underexplored and labor-intensive. 
+              In this paper, we propose and formulate a new research area: automated failure attribution for LLM multi-agent systems.
+              To support this initiative, we introduce the Who&When dataset, comprising extensive failure logs from 127 LLM multi-agent systems with fine-grained annotations linking failures to specific agents and decisive error steps.
+              Using the Who\&When, we develop and evaluate three automated failure attribution methods, summarizing their corresponding pros and cons. 
+              The best method achieves 53.5\% accuracy in identifying failure-responsible agents but only 14.2\% in pinpointing failure steps, with some methods performing below random. 
+              Even SOTA reasoning models, such as OpenAI o1 and DeepSeek R1, fail to achieve practical usability.
+              These results highlight the task's complexity and the need for further research in this area.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+      <div class="container">
+    <div class="columns is-centered">
+      <div class="container is-max-desktop content">
+        <h2 class="title is-3">Motivation</h2>
+  
+        <div class="content has-text-justified">
+          <p>
+            Modern LLM multi-agent systems often fail in subtle ways: the final answer is wrong, but it is unclear <em>which agent</em> caused the failure or <em>which step</em> first went wrong.
+            In practice, developers must manually inspect long, multi-agent execution logs to identify the root cause, a process that is slow, error-prone, and requires significant domain expertise.
+            </p>
+            
+            <p>
+            This manual failure attribution step has become a major bottleneck in agent system development.
+            As agent teams grow larger and interactions become longer, simply knowing that a system failed is no longer actionable without knowing <strong>who failed and when</strong>.
+            </p>
+            
+            <p>
+            We argue that failure attribution should be treated as a first-class research problem.
+            This work introduces <strong>automated failure attribution</strong>: using LLMs to automatically identify the failure-responsible agent and the decisive error step directly from execution logs.
+            </p>
+          <p>
+            <img src="./static/images/demo.gif" alt="Failure Attribution Demo" style="width: 60%; max-width: 800px; margin: 20px auto; display: block;" />
+          </p>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+  <section class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div class="container">
+  <div class="columns is-centered">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Method</h2>
+
+      <div class="content has-text-justified">
+        <p>
+          <img src="./static/images/overview.png" alt="Method Overview" style="width: 60%; max-width: 900px; margin: 20px auto; display: block;" />
+        </p>
+        <p>
+          We introduce <strong>Who&amp;When</strong>, the first benchmark for automated failure attribution in LLM multi-agent systems.
+          The dataset contains failure logs from <strong>127 multi-agent systems</strong>, each annotated with:
+          (i) the <em>failure-responsible agent</em>, and
+          (ii) the <em>decisive error step</em>, the earliest mistake whose correction would change failure into success. On top of this benchmark, we study three representative failure attribution strategies that expose fundamental trade-offs:
+          </p>
+        <ul>
+          <li><strong>All-at-Once:</strong> Analyzes the entire failure log in a single pass.</li>
+          <li><strong>Binary Search:</strong> Iteratively narrows down the search space by splitting logs in half.</li>
+          <li><strong>Step-by-Step:</strong> Evaluates each step sequentially to detect errors.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div class="container">
+      <!-- Animation. -->
+      <div class="columns is-centered">
+        <div class="container is-max-desktop content">
+          <h2 class="title is-3">Results</h2>
+          <div class="content has-text-justified">
+            <p>
+              <img src="./static/images/main_exp.png" alt="Main Experimental Results" style="width: 60%; max-width: 1000px; margin: 20px auto; display: block;" />
+            </p>
+            <p>
+              Our experiments reveal that automated failure attribution is substantially harder than standard evaluation tasks.
+              Even the best-performing approach achieves only <strong>53.5% accuracy</strong> in identifying the failure-responsible agent and <strong>14.2% accuracy</strong> in pinpointing the exact failure step.
+              </p>
+            
+
+              <p>
+                <img src="./static/images/abla_model.png" alt="Model Ablation Study" style="width: 60%; max-width: 1000px; margin: 20px auto; display: block;" />
+              </p>
+
+              <p>
+                Notably, stronger reasoning models do not solve the problem.
+                State-of-the-art reasoning models such as <strong>OpenAI o1</strong> and <strong>DeepSeek R1</strong> fail to achieve practical step-level accuracy, and in some settings perform worse than simpler baselines.
+              These results indicate that failure attribution is not merely a matter of stronger reasoning or larger models.
+              Instead, it exposes fundamental limitations in how LLMs retrieve, localize, and reason about errors within long, multi-agent interaction histories.
+              </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <div class="container is-max-desktop content">
+      <h2 class="title" style="margin-bottom: 0.5rem;">BibTeX</h2>
+      <pre><code>
+@inproceedings{
+  zhang2025which,
+  title={Which Agent Causes Task Failures and When? On Automated Failure Attribution of {LLM} Multi-Agent Systems},
+  author={Shaokun Zhang and Ming Yin and Jieyu Zhang and Jiale Liu and Zhiguang Han and Jingyang Zhang and Beibin Li and Chi Wang and Huazheng Wang and Yiran Chen and Qingyun Wu},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=GazlTYxZss}
+}
+</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is forked from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies
+                website</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
