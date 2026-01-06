@@ -122,6 +122,7 @@ python evaluate.py --data_path ../Who\&When/Algorithm-Generated --eval_file  out
 
 More results could be found in the paper.
 
+
 ## 📖 Reference
 > [!IMPORTANT]
 > If you find it useful, please consider citing our work:
@@ -136,3 +137,8 @@ year={2025},
 url={https://openreview.net/forum?id=GazlTYxZss}
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ag2ai/Agents_Failure_Attribution&type=date&legend=top-left)](https://www.star-history.com/#ag2ai/Agents_Failure_Attribution&type=date&legend=top-left)
+
