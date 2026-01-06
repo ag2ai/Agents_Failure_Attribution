@@ -13,6 +13,14 @@ body {
     margin-bottom: 5px;
 }
 
+.publication-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .dnerf {
   font-variant: small-caps;
 }
