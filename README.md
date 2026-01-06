@@ -9,7 +9,8 @@
   <a href="https://mp.weixin.qq.com/s/etweZ18bWWVz7thglMdGXA">Synced (机器之心)</a> •
   <a href="https://mp.weixin.qq.com/s/dIhJj6Z6WmBAobM3Ay1YjQ">AIEra (新智元)</a> •
   <a href="https://mp.weixin.qq.com/s/6bmoyg2Pho28rYzgjdbFYA">QbitAI (量子位)</a> •
-  <a href="https://discord.gg/Z5frZMzQ">Discord</a>
+  <a href="https://discord.gg/Z5frZMzQ">Discord</a>  •
+  <a href="https://ag2ai.github.io/Agents_Failure_Attribution/">Project Page</a> 
 </p>
 
 
