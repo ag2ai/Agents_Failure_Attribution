@@ -3,6 +3,10 @@
 </p>
 
 <p align="center">
+  <font color="red"><b>The first and the best benchmark debugging failures from agentic trajectories.</b></font>
+</p>
+
+<p align="center">
   <a href="https://img.shields.io/badge/License-MIT-blue?style=flat-square">License</a> •
   <a href="https://arxiv.org/pdf/2505.00212">Paper</a> •
   <a href="https://huggingface.co/datasets/Kevin355/Who_and_When">Dataset</a> •
