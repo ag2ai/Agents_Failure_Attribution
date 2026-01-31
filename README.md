@@ -2,9 +2,7 @@
   <img src="assets/title.png" alt="overview" width="550">
 </p>
 
-<p align="center">
-  <font color="red"><b>The first and the best benchmark debugging failures from agentic trajectories.</b></font>
-</p>
+
 
 <p align="center">
   <a href="https://img.shields.io/badge/License-MIT-blue?style=flat-square">License</a> •
@@ -17,9 +15,7 @@
   <a href="https://ag2ai.github.io/Agents_Failure_Attribution/">Project Page</a> 
 </p>
 
-
-> [!IMPORTANT]
-> If you find this project helpful, please consider giving us a ⭐️!
+> **The first and the best benchmark debugging failures from agentic trajectories.**
 
 ## 🧐 Overview
 
