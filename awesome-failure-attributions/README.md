@@ -49,8 +49,8 @@ Methods for automatically identifying the responsible agent and decisive error s
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| **AgentRx: Diagnosing AI Agent Failures from Execution Trajectories** | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.02475) |
 | **Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems** | ICML | 2025 | [[Paper]](https://arxiv.org/abs/2505.00212) [[Code]](https://github.com/ag2ai/Agents_Failure_Attribution) |
+| **AgentRx: Diagnosing AI Agent Failures from Execution Trajectories** | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.02475) |
 | **Who is Introducing the Failure? Automatically Attributing Failures of Multi-Agent Systems via Spectrum Analysis** | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.13782) |
 | **AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?** | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.03312) |
 | **Diagnosing Failure Root Causes in Platform-Orchestrated Agentic Systems: Dataset, Taxonomy, and Benchmark** | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.23735) |
@@ -77,8 +77,8 @@ Systematic classification of how and why LLM agents fail.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| **AgentRx: Diagnosing AI Agent Failures from Execution Trajectories** | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.02475) |
 | **Why Do Multi-Agent LLM Systems Fail?** | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2503.13657) [[Code]](https://github.com/multi-agent-systems-failure-taxonomy/MAST) |
+| **AgentRx: Diagnosing AI Agent Failures from Execution Trajectories** | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.02475) |
 | **Where LLM Agents Fail and How They Can Learn From Failures** | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.25370) [[Code]](https://github.com/ulab-uiuc/AgentDebug) |
 | **A Taxonomy of Failures in Tool-Augmented LLMs** | AST | 2025 | [[Paper]](https://homes.cs.washington.edu/~rjust/publ/tallm_testing_ast_2025.pdf) |
 | **Taxonomy of Failure Mode in Agentic AI Systems** | Whitepaper | 2025 | [[Paper]](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Taxonomy-of-Failure-Mode-in-Agentic-AI-Systems-Whitepaper.pdf) |
@@ -91,8 +91,8 @@ Datasets with ground-truth annotations for evaluating failure attribution method
 
 | Benchmark | Description | Year | Links |
 |-----------|-------------|------|-------|
-| **AgentRx** | 115 failed trajectories spanning API workflows, incident management, and web/file tasks | 2026 | [[Paper]](https://arxiv.org/abs/2602.02475) |
 | **Who&When** | Failure logs from 127 multi-agent systems with agent/step annotations | 2025 | [[Paper]](https://arxiv.org/abs/2505.00212) [[Dataset]](https://huggingface.co/datasets/Kevin355/Who_and_When) |
+| **AgentRx** | 115 failed trajectories spanning API workflows, incident management, and web/file tasks | 2026 | [[Paper]](https://arxiv.org/abs/2602.02475) |
 | **MAST-Data** | Annotated traces across 7 MAS frameworks with 14 failure modes | 2025 | [[Paper]](https://arxiv.org/abs/2503.13657) [[Code]](https://github.com/multi-agent-systems-failure-taxonomy/MAST) |
 | **AgentFail** | Failure logs from 10 agentic systems with root cause annotations | 2025 | [[Paper]](https://arxiv.org/abs/2509.23735) |
 | **AgentErrorBench** | Annotated failure trajectories from ALFWorld, GAIA, and WebShop | 2025 | [[Paper]](https://arxiv.org/abs/2509.25370) [[Code]](https://github.com/ulab-uiuc/AgentDebug) |
