@@ -5,6 +5,8 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
 </p>
 
+
+
 <h1 align="center">Awesome Agentic Failure Attribution</h1>
 
 <p align="center">
@@ -18,7 +20,9 @@
   <a href="#contributing">Contributing</a>
 </p>
 
----
+<p align="center">
+  <img src="../assets/FA.png" alt="Agentic Failure Attribution" width="400">
+</p>
 
 ## Overview
 
