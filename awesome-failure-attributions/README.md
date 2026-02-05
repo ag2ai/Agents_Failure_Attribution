@@ -111,7 +111,7 @@ Contributions are welcome. Please submit a Pull Request with papers related to a
   <sub>Last updated: February 2026</sub>
 </p>
 
-## valuable Contributors👩‍💻👨‍💻 :
+## Contributors Wall
 
 <p align="center"><a href="https://github.com/ag2ai/Agents_Failure_Attribution">
   <img src="https://contributors-img.web.app/image?repo=ag2ai/Agents_Failure_Attribution" />
