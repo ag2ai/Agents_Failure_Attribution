@@ -77,7 +77,7 @@ Systematic classification of how and why LLM agents fail.
 
 | Paper | Venue | Year | Links |
 |-------|-------|------|-------|
-| **Why Do Multi-Agent LLM Systems Fail?** | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2503.13657) [[Code]](https://github.com/multi-agent-systems-failure-taxonomy/MAST) |
+| **Why Do Multi-Agent LLM Systems Fail?** | NeurIPS | 2025 | [[Paper]](https://arxiv.org/abs/2503.13657) [[Code]](https://github.com/multi-agent-systems-failure-taxonomy/MAST) |
 | **AgentRx: Diagnosing AI Agent Failures from Execution Trajectories** | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2602.02475) |
 | **Where LLM Agents Fail and How They Can Learn From Failures** | arXiv | 2025 | [[Paper]](https://arxiv.org/abs/2509.25370) [[Code]](https://github.com/ulab-uiuc/AgentDebug) |
 | **A Taxonomy of Failures in Tool-Augmented LLMs** | AST | 2025 | [[Paper]](https://homes.cs.washington.edu/~rjust/publ/tallm_testing_ast_2025.pdf) |
