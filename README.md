@@ -13,6 +13,7 @@
   <a href="https://mp.weixin.qq.com/s/6bmoyg2Pho28rYzgjdbFYA">QbitAI (量子位)</a> •
   <a href="https://discord.gg/Z5frZMzQ">Discord</a>  •
   <a href="https://ag2ai.github.io/Agents_Failure_Attribution/">Project Page</a> 
+  <a href="hhttps://github.com/ag2ai/Agents_Failure_Attribution/tree/main/awesome-failure-attributions">Awsome Failure Attributions</a> 
 </p>
 
 > **The first and the best benchmark debugging failures from agentic trajectories.**
