@@ -5,10 +5,10 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
 </p>
 
-<h1 align="center">Awesome LLM Agent Failure Attribution</h1>
+<h1 align="center">Awesome Agentic Failure Attribution</h1>
 
 <p align="center">
-  <b>A curated collection of research on failure attribution in agentic AI systems.</b>
+  <b>A curated collection of research on failure attribution from agentic traces.</b>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 
 ## Overview
 
-Failure attribution—the process of identifying errors that occur in multi-agent systems—is fundamental to building reliable agentic systems. As multi-agent systems grow in complexity, failure attribution becomes essential for targeted improvements and system reliability.
+Agentic failure attribution is the process of identifying errors that occur in agentic systems and is fundamental to building reliable agentic systems. As these systems grow in complexity, accurate failure attribution becomes increasingly important for enabling targeted improvements and maintaining overall system reliability.
 
 This collection focuses on research that directly addresses:
 - **Automated Failure Attribution**: Methods for identifying failures from agentic trajectories.
@@ -98,18 +98,21 @@ Datasets with ground-truth annotations for evaluating failure attribution method
 
 ## Contributing
 
-Contributions are welcome. Please submit a Pull Request with papers related to LLM agent failure attribution.
+Contributions are welcome. Please submit a Pull Request with papers related to agentic failure attribution.
 
 ### Paper Format
 ```markdown
 | **Paper Title** | Venue | Year | [[Paper]](url) [[Code]](url) |
 ```
 
-### Scope
-Papers should directly address failure attribution, root cause analysis, or error diagnosis in LLM-based agent systems.
-
 ---
 
 <p align="center">
   <sub>Last updated: February 2026</sub>
 </p>
+
+## valuable Contributors👩‍💻👨‍💻 :
+
+<p align="center"><a href="https://github.com/ag2ai/Agents_Failure_Attribution">
+  <img src="https://contributors-img.web.app/image?repo=ag2ai/Agents_Failure_Attribution" />
+</a></p>
