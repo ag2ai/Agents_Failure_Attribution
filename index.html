@@ -22,7 +22,7 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -31,6 +31,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/logo.png">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -46,46 +50,30 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://skzhang1.github.io/">Shaokun Zhang🧐😎</a><sup>1</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="http://mingyin1.github.io/">Ming Yin🧐</a><sup>2</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://jieyuz2.github.io/">Jieyu Zhang</a><sup>3</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://leoljl.github.io">Jiale Liu</a><sup>1</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://justinhhhh.github.io/">Zhiguang Han</a><sup>4</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://zjysteven.github.io/">Jingyang Zhang</a><sup>2</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://www.beibinli.com/">Beibin Li</a><sup>6</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/chi-wang-autogen/">Chi Wang</a><sup>5</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://huazhengwang.github.io/">Huazheng Wang</a><sup>7</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://ece.duke.edu/people/yiran-chen/">Yiran Chen</a><sup>2</sup></span>&nbsp;&nbsp;
-              <span class="author-block">
-                <a href="https://qingyun-wu.github.io">Qingyun Wu😎</a><sup>1</sup>
-              </span>
+            <h1 class="publication-title" data-aos="fade-down" data-aos-duration="1000">Which Agent Causes Task Failures and When?<br>On Automated Failure Attribution of LLM Multi-Agent Systems</h1>
+            <div class="publication-authors-eagle">
+              <a href="https://skzhang1.github.io/">Shaokun Zhang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+              <a href="http://mingyin1.github.io/">Ming Yin</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://jieyuz2.github.io/">Jieyu Zhang</a><sup>3</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://leoljl.github.io">Jiale Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://justinhhhh.github.io/">Zhiguang Han</a><sup>4</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://zjysteven.github.io/">Jingyang Zhang</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://www.beibinli.com/">Beibin Li</a><sup>5</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/chi-wang-autogen/">Chi Wang</a><sup>6</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://huazhengwang.github.io/">Huazheng Wang</a><sup>7</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://ece.duke.edu/people/yiran-chen/">Yiran Chen</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
+              <a href="https://qingyun-wu.github.io">Qingyun Wu</a><sup>1</sup>
             </div>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Pennsylvania State University</span>&nbsp;&nbsp;
-              <span class="author-block"><sup>2</sup>Duke University</span>&nbsp;&nbsp;
-              <span class="author-block"><sup>3</sup>University of Washington</span>&nbsp;&nbsp;
-              <span class="author-block"><sup>7</sup>Oregon State University</span>
-              <span class="author-block"><sup>4</sup>Nanyang Technological University</span>&nbsp;&nbsp;
-              <span class="author-block"><sup>5</sup>Google DeepMind</span>&nbsp;&nbsp;
-              <span class="author-block"><sup>6</sup>XAI</span>&nbsp;&nbsp;
+            <div class="publication-affiliations">
+              <sup>1</sup>Penn State &nbsp;&nbsp;
+              <sup>2</sup>Duke &nbsp;&nbsp;
+              <sup>3</sup>UW &nbsp;&nbsp;
+              <sup>4</sup>NTU &nbsp;&nbsp;
+              <sup>5</sup>xAI &nbsp;&nbsp;
+              <sup>6</sup>Google DeepMind &nbsp;&nbsp;
+              <sup>7</sup>Oregon State
             </div>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">🧐 Equal contributions </span>&nbsp;&nbsp;&nbsp;
-              <span class="author-block">😎 Corresponding authors </span>
-            </div>
-            <div class="column has-text-centered">
+            <div class="column has-text-centered" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
               <div class="publication-links">
                 <span class="link-block">
                   <a href="https://arxiv.org/pdf/2505.00212" class="external-link button is-normal is-rounded is-dark">
@@ -147,18 +135,185 @@
                 </span>
               </div>
             </div>
+
+            <!-- Key Highlights -->
+            <div class="key-highlights" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+              <div class="highlight-item">
+                <i class="fas fa-search"></i>
+                <span><strong class="highlight-keyword">Automated Failure Attribution</strong> — A rigorous definition and evaluation framework for identifying and analyzing failures in multi-agent systems.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-database"></i>
+                <span><strong class="highlight-keyword">Who&When Benchmark</strong> — The first benchmark built from failure logs across 127 multi-agent systems, featuring fine-grained annotations that link failures to specific agents and execution steps.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-code-branch"></i>
+                <span><strong class="highlight-keyword">Three Attribution Methods</strong> — A systematic comparison of All-at-Once, Binary Search, and Step-by-Step strategies, highlighting their trade-offs in accuracy and efficiency.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span><strong class="highlight-keyword">Challenging Open Problem</strong> — Even state-of-the-art models achieve limited performance, underscoring substantial opportunities for future research.</span>
+              </div>
+            </div>
+
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Leaderboard Section -->
+      <div class="leaderboard-container" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="title is-3 leaderboard-title">Leaderboard</h2>
+        <p class="leaderboard-subtitle">Performance comparison of failure attribution methods across different settings (GPT-4o as the backbone).</p>
+        <div class="leaderboard-table-wrapper">
+          <table class="leaderboard-table">
+            <thead>
+              <tr>
+                <th rowspan="2" class="th-method">Method</th>
+                <th rowspan="2" class="th-metric">Metric</th>
+                <th colspan="2" class="th-group">With Ground Truth</th>
+                <th colspan="2" class="th-group">Without Ground Truth</th>
+              </tr>
+              <tr>
+                <th class="th-sub">Algorithm Generated</th>
+                <th class="th-sub">Hand Crafted</th>
+                <th class="th-sub">Algorithm Generated</th>
+                <th class="th-sub">Hand Crafted</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="td-method">Random</td>
+                <td class="td-metric">Agent-Level Accuracy</td>
+                <td>29.10</td>
+                <td>12.00</td>
+                <td>29.10</td>
+                <td>12.00</td>
+              </tr>
+              <tr>
+                <td class="td-metric">Step-Level Accuracy</td>
+                <td>19.06</td>
+                <td>4.16</td>
+                <td>19.06</td>
+                <td>4.16</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="td-method">All-at-Once</td>
+                <td class="td-metric">Agent-Level Accuracy</td>
+                <td class="best">54.33</td>
+                <td class="best">55.17</td>
+                <td class="best">51.12</td>
+                <td class="best">53.44</td>
+              </tr>
+              <tr>
+                <td class="td-metric">Step-Level Accuracy</td>
+                <td>12.50</td>
+                <td>5.26</td>
+                <td>13.53</td>
+                <td>3.51</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="td-method">Step-by-Step</td>
+                <td class="td-metric">Agent-Level Accuracy</td>
+                <td>35.20</td>
+                <td>34.48</td>
+                <td>26.02</td>
+                <td>32.75</td>
+              </tr>
+              <tr>
+                <td class="td-metric">Step-Level Accuracy</td>
+                <td class="best">25.51</td>
+                <td class="best">7.02</td>
+                <td>15.31</td>
+                <td class="best">8.77</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="td-method">Binary Search</td>
+                <td class="td-metric">Agent-Level Accuracy</td>
+                <td>44.13</td>
+                <td>51.72</td>
+                <td>30.11</td>
+                <td>36.21</td>
+              </tr>
+              <tr>
+                <td class="td-metric">Step-Level Accuracy</td>
+                <td>23.98</td>
+                <td>6.90</td>
+                <td class="best">16.59</td>
+                <td>6.90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Case Study Gallery -->
+      <div class="case-gallery-container" data-aos="fade-up" data-aos-duration="1000">
+        
+        <div class="case-display">
+          <div class="case-panel">
+            <div class="panel-header">
+              <i class="fas fa-route"></i> Agent Trajectory
+            </div>
+            <div class="panel-content">
+              <div class="question-box" id="case-question">
+                <div class="question-label">Task</div>
+                <div id="question-text">Loading...</div>
+              </div>
+              <div class="trajectory-container" id="trajectory-content">
+                Loading trajectory...
+              </div>
+            </div>
+          </div>
+
+          <div class="transform-arrow">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="case-panel">
+            <div class="panel-header">
+              <i class="fas fa-crosshairs"></i> Failure Attribution
+            </div>
+            <div class="panel-content">
+              <div class="attribution-result" id="attribution-content">
+                <div class="attribution-item">
+                  <div class="attribution-label">Failure-Responsible Agent</div>
+                  <div class="attribution-value agent" id="mistake-agent">Loading...</div>
+                </div>
+                <div class="attribution-item">
+                  <div class="attribution-label">Decisive Error Step</div>
+                  <div class="attribution-value step" id="mistake-step">Loading...</div>
+                </div>
+                <div class="attribution-item">
+                  <div class="attribution-label">Reason</div>
+                  <div class="attribution-value" id="mistake-reason">Loading...</div>
+                </div>
+                <div class="attribution-item">
+                  <div class="attribution-label">Ground Truth Answer</div>
+                  <div class="attribution-value" id="ground-truth">Loading...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-thumbnails">
+          <div class="case-thumb active" data-case="1">Case 1</div>
+          <div class="case-thumb" data-case="2">Case 2</div>
+          <div class="case-thumb" data-case="3">Case 3</div>
+          <div class="case-thumb" data-case="4">Case 4</div>
+          <div class="case-thumb" data-case="5">Case 5</div>
+        </div>
+      </div>
+
   </section>
   <section class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Overview</h2>
-          <div class="content has-text-justified">
+          <h2 class="title is-3" data-aos="fade-up" data-aos-duration="800">Overview</h2>
+          <div class="content has-text-justified" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
             <p>
               Failure attribution in LLM multi-agent systems—identifying the agent and step responsible for task failures—provides crucial clues for systems debugging but remains underexplored and labor-intensive. 
               In this paper, we propose and formulate a new research area: automated failure attribution for LLM multi-agent systems.
@@ -178,9 +333,9 @@
       <div class="container">
     <div class="columns is-centered">
       <div class="container is-max-desktop content">
-        <h2 class="title is-3">Motivation</h2>
-  
-        <div class="content has-text-justified">
+        <h2 class="title is-3" data-aos="fade-up" data-aos-duration="800">Motivation</h2>
+
+        <div class="content has-text-justified" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <p>
             Modern LLM multi-agent systems often fail in subtle ways: the final answer is wrong, but it is unclear <em>which agent</em> caused the failure or <em>which step</em> first went wrong.
             In practice, developers must manually inspect long, multi-agent execution logs to identify the root cause, a process that is slow, error-prone, and requires significant domain expertise.
@@ -196,7 +351,7 @@
             This work introduces <strong>automated failure attribution</strong>: using LLMs to automatically identify the failure-responsible agent and the decisive error step directly from execution logs.
             </p>
           <p>
-            <img src="./static/images/demo.gif" alt="Failure Attribution Demo" style="width: 60%; max-width: 800px; margin: 20px auto; display: block;" />
+            <img src="./static/images/demo.gif" alt="Failure Attribution Demo" style="width: 90%; max-width: 800px; margin: 20px auto; display: block;" data-aos="zoom-in" data-aos-delay="200" />
           </p>
         </div>
       </div>
@@ -208,11 +363,11 @@
     <div class="container">
   <div class="columns is-centered">
     <div class="container is-max-desktop content">
-      <h2 class="title is-3">Method</h2>
+      <h2 class="title is-3" data-aos="fade-up" data-aos-duration="800">Method</h2>
 
-      <div class="content has-text-justified">
+      <div class="content has-text-justified" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
         <p>
-          <img src="./static/images/overview.png" alt="Method Overview" style="width: 60%; max-width: 900px; margin: 20px auto; display: block;" />
+          <img src="./static/images/overview.png" alt="Method Overview" style="width: 90%; max-width: 900px; margin: 20px auto; display: block;" data-aos="zoom-in" data-aos-delay="200" />
         </p>
         <p>
           We introduce <strong>Who&amp;When</strong>, the first benchmark for automated failure attribution in LLM multi-agent systems.
@@ -236,10 +391,10 @@
       <!-- Animation. -->
       <div class="columns is-centered">
         <div class="container is-max-desktop content">
-          <h2 class="title is-3">Results</h2>
-          <div class="content has-text-justified">
+          <h2 class="title is-3" data-aos="fade-up" data-aos-duration="800">Results</h2>
+          <div class="content has-text-justified" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
             <p>
-              <img src="./static/images/main_exp.png" alt="Main Experimental Results" style="width: 60%; max-width: 1000px; margin: 20px auto; display: block;" />
+              <img src="./static/images/main_exp.png" alt="Main Experimental Results" style="width: 90%; max-width: 1000px; margin: 20px auto; display: block;" data-aos="zoom-in" data-aos-delay="200" />
             </p>
             <p>
               Our experiments reveal that automated failure attribution is substantially harder than standard evaluation tasks.
@@ -248,7 +403,7 @@
             
 
               <p>
-                <img src="./static/images/abla_model.png" alt="Model Ablation Study" style="width: 60%; max-width: 1000px; margin: 20px auto; display: block;" />
+                <img src="./static/images/abla_model.png" alt="Model Ablation Study" style="width: 90%; max-width: 1000px; margin: 20px auto; display: block;" data-aos="zoom-in" data-aos-delay="200" />
               </p>
 
               <p>
@@ -266,7 +421,7 @@
 
   <section class="section" id="BibTeX" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
     <div class="container is-max-desktop content">
-      <h2 class="title" style="margin-bottom: 0.5rem;">BibTeX</h2>
+      <h2 class="title is-3" data-aos="fade-up" data-aos-duration="800">BibTeX</h2>
       <pre><code>
 @inproceedings{
   zhang2025which,
@@ -297,6 +452,74 @@
       </div>
     </div>
   </footer>
+
+  <!-- Case Data -->
+  <script src="./static/js/caseData.js"></script>
+
+  <!-- Initialize AOS animations -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: false,
+        mirror: false
+      });
+
+      // Case Study Gallery - Data loaded from caseData.js
+      const caseThumbs = document.querySelectorAll('.case-thumb');
+
+      function loadCase(caseNum) {
+        displayCase(caseData[caseNum], caseNum);
+      }
+
+      function displayCase(data, caseNum) {
+        // Display question
+        document.getElementById('question-text').textContent = data.question;
+
+        // Display trajectory
+        const trajectoryContainer = document.getElementById('trajectory-content');
+        let trajectoryHTML = '';
+
+        for (let i = 0; i < data.history.length; i++) {
+          const step = data.history[i];
+          const role = step.role || 'Unknown';
+          let content = step.content || '';
+
+          // Clean up content for display
+          content = content.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+          trajectoryHTML += `
+            <div class="trajectory-step">
+              <div class="step-role">Step ${i + 1}: ${role}</div>
+              <div class="step-content">${content}</div>
+            </div>
+          `;
+        }
+
+        
+        trajectoryContainer.innerHTML = trajectoryHTML;
+
+        // Display attribution results
+        document.getElementById('mistake-agent').textContent = data.mistake_agent;
+        document.getElementById('mistake-step').textContent = 'Step ' + data.mistake_step;
+        document.getElementById('mistake-reason').textContent = data.mistake_reason;
+        document.getElementById('ground-truth').textContent = data.ground_truth;
+      }
+
+      // Handle thumbnail clicks
+      caseThumbs.forEach(thumb => {
+        thumb.addEventListener('click', function() {
+          caseThumbs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          loadCase(this.dataset.case);
+        });
+      });
+
+      // Load first case on page load
+      loadCase(1);
+    });
+  </script>
 
 </body>
 
