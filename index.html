@@ -177,15 +177,45 @@
       <!-- Demo Section -->
       <div id="section-demo" class="tab-content active" data-aos="fade-up" data-aos-duration="1000">
         <div class="demo-container">
-          <!-- Demo Video -->
-          <div class="demo-video-wrapper">
-            <video class="demo-video" controls playsinline>
-              <source src="./static/demo/demo.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+              <!-- Case Study Gallery -->
+          <div class="case-thumbnails">
+            <div class="case-thumb active" data-case="1">
+              <div class="case-thumb-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="case-thumb-text">
+                <div class="case-thumb-label">Case 1</div>
+                <div class="case-thumb-desc">Web Navigation</div>
+              </div>
+            </div>
+            <div class="case-thumb" data-case="2">
+              <div class="case-thumb-icon"><i class="fas fa-calculator"></i></div>
+              <div class="case-thumb-text">
+                <div class="case-thumb-label">Case 2</div>
+                <div class="case-thumb-desc">Math Reasoning</div>
+              </div>
+            </div>
+            <div class="case-thumb" data-case="3">
+              <div class="case-thumb-icon"><i class="fas fa-code"></i></div>
+              <div class="case-thumb-text">
+                <div class="case-thumb-label">Case 3</div>
+                <div class="case-thumb-desc">Code Generation</div>
+              </div>
+            </div>
+            <div class="case-thumb" data-case="4">
+              <div class="case-thumb-icon"><i class="fas fa-chart-bar"></i></div>
+              <div class="case-thumb-text">
+                <div class="case-thumb-label">Case 4</div>
+                <div class="case-thumb-desc">Data Analysis</div>
+              </div>
+            </div>
+            <div class="case-thumb" data-case="5">
+              <div class="case-thumb-icon"><i class="fas fa-search"></i></div>
+              <div class="case-thumb-text">
+                <div class="case-thumb-label">Case 5</div>
+                <div class="case-thumb-desc">Information Retrieval</div>
+              </div>
+            </div>
           </div>
 
-          <!-- Case Study Gallery -->
           <div class="case-display">
             <div class="case-panel">
               <div class="panel-header">
@@ -233,12 +263,13 @@
             </div>
           </div>
 
-          <div class="case-thumbnails">
-            <div class="case-thumb active" data-case="1">Case 1</div>
-            <div class="case-thumb" data-case="2">Case 2</div>
-            <div class="case-thumb" data-case="3">Case 3</div>
-            <div class="case-thumb" data-case="4">Case 4</div>
-            <div class="case-thumb" data-case="5">Case 5</div>
+          <!-- Demo Video -->
+          <div class="demo-video-wrapper">
+            <div class="demo-video-label"><i class="fas fa-play-circle"></i> Tool Demo Video</div>
+            <video class="demo-video" controls playsinline>
+              <source src="./static/demo/demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
@@ -252,7 +283,12 @@
               <span class="quickstart-step-number">1</span>
               <span class="quickstart-step-title">Install</span>
             </div>
-            <pre class="quickstart-code"><code>pip install ag2tracer</code></pre>
+            <div class="code-block">
+              <div class="code-block-header">
+                <span class="code-lang-badge">Terminal</span>
+              </div>
+              <pre class="quickstart-code"><code><span class="tk-command">pip</span> install ag2tracer</code></pre>
+            </div>
           </div>
 
           <div class="quickstart-step">
@@ -260,10 +296,15 @@
               <span class="quickstart-step-number">2</span>
               <span class="quickstart-step-title">Set API Key</span>
             </div>
-            <pre class="quickstart-code"><code>export OPENAI_API_KEY="your-openai-key"
-# Optional: other providers
-export ANTHROPIC_API_KEY="your-anthropic-key"
-export GOOGLE_API_KEY="your-google-key"</code></pre>
+            <div class="code-block">
+              <div class="code-block-header">
+                <span class="code-lang-badge">Terminal</span>
+              </div>
+              <pre class="quickstart-code"><code><span class="tk-builtin">export</span> <span class="tk-variable">OPENAI_API_KEY</span>=<span class="tk-string">"your-openai-key"</span>
+<span class="tk-comment"># Optional: other providers</span>
+<span class="tk-builtin">export</span> <span class="tk-variable">ANTHROPIC_API_KEY</span>=<span class="tk-string">"your-anthropic-key"</span>
+<span class="tk-builtin">export</span> <span class="tk-variable">GOOGLE_API_KEY</span>=<span class="tk-string">"your-google-key"</span></code></pre>
+            </div>
           </div>
 
           <div class="quickstart-step">
@@ -272,15 +313,20 @@ export GOOGLE_API_KEY="your-google-key"</code></pre>
               <span class="quickstart-step-title">Prepare Your Trace</span>
             </div>
             <p class="quickstart-desc">Your trace JSON must contain a <code>"history"</code> or <code>"conversation"</code> array:</p>
-            <pre class="quickstart-code"><code>{
-  "history": [
-    {"role": "assistant", "name": "Excel_Expert", "content": "Let me analyze..."},
-    {"role": "user", "name": "Computer_terminal", "content": "exitcode: 0 ..."},
-    {"role": "user", "name": "DataVerification_Expert", "content": "TERMINATE"}
+            <div class="code-block">
+              <div class="code-block-header">
+                <span class="code-lang-badge">JSON</span>
+              </div>
+              <pre class="quickstart-code"><code>{
+  <span class="tk-key">"history"</span>: [
+    {<span class="tk-key">"role"</span>: <span class="tk-string">"assistant"</span>, <span class="tk-key">"name"</span>: <span class="tk-string">"Excel_Expert"</span>, <span class="tk-key">"content"</span>: <span class="tk-string">"Let me analyze..."</span>},
+    {<span class="tk-key">"role"</span>: <span class="tk-string">"user"</span>, <span class="tk-key">"name"</span>: <span class="tk-string">"Computer_terminal"</span>, <span class="tk-key">"content"</span>: <span class="tk-string">"exitcode: 0 ..."</span>},
+    {<span class="tk-key">"role"</span>: <span class="tk-string">"user"</span>, <span class="tk-key">"name"</span>: <span class="tk-string">"DataVerification_Expert"</span>, <span class="tk-key">"content"</span>: <span class="tk-string">"TERMINATE"</span>}
   ],
-  "question": "optional problem description",
-  "ground_truth": "optional expected answer"
+  <span class="tk-key">"question"</span>: <span class="tk-string">"optional problem description"</span>,
+  <span class="tk-key">"ground_truth"</span>: <span class="tk-string">"optional expected answer"</span>
 }</code></pre>
+            </div>
           </div>
 
           <div class="quickstart-step">
@@ -288,20 +334,25 @@ export GOOGLE_API_KEY="your-google-key"</code></pre>
               <span class="quickstart-step-number">4a</span>
               <span class="quickstart-step-title">Use the Python API</span>
             </div>
-            <pre class="quickstart-code"><code>import json
-from ag2tracer import all_at_once, step_by_step, binary_search
+            <div class="code-block">
+              <div class="code-block-header">
+                <span class="code-lang-badge">Python</span>
+              </div>
+              <pre class="quickstart-code"><code><span class="tk-keyword">import</span> <span class="tk-module">json</span>
+<span class="tk-keyword">from</span> <span class="tk-module">ag2tracer</span> <span class="tk-keyword">import</span> all_at_once, step_by_step, binary_search
 
-with open("trace.json") as f:
-    trace = json.load(f)
+<span class="tk-keyword">with</span> <span class="tk-builtin">open</span>(<span class="tk-string">"trace.json"</span>) <span class="tk-keyword">as</span> f:
+    trace = <span class="tk-module">json</span>.<span class="tk-func">load</span>(f)
 
-# Choose a method
-result = all_at_once(trace, model="gpt-4o")
-# result = step_by_step(trace, model="gpt-4o")
-# result = binary_search(trace, model="gpt-4o")
+<span class="tk-comment"># Choose a method</span>
+result = <span class="tk-func">all_at_once</span>(trace, model=<span class="tk-string">"gpt-4o"</span>)
+<span class="tk-comment"># result = step_by_step(trace, model="gpt-4o")</span>
+<span class="tk-comment"># result = binary_search(trace, model="gpt-4o")</span>
 
-print(f"Agent: {result.agent_name}")
-print(f"Step:  {result.step_number}")
-print(f"Reason: {result.reason}")</code></pre>
+<span class="tk-builtin">print</span>(<span class="tk-string">f"Agent: <span class="tk-interp">{result.agent_name}</span>"</span>)
+<span class="tk-builtin">print</span>(<span class="tk-string">f"Step:  <span class="tk-interp">{result.step_number}</span>"</span>)
+<span class="tk-builtin">print</span>(<span class="tk-string">f"Reason: <span class="tk-interp">{result.reason}</span>"</span>)</code></pre>
+            </div>
           </div>
 
           <div class="quickstart-step">
@@ -309,16 +360,21 @@ print(f"Reason: {result.reason}")</code></pre>
               <span class="quickstart-step-number">4b</span>
               <span class="quickstart-step-title">Or Launch the Web UI</span>
             </div>
-            <pre class="quickstart-code"><code># Launch the web interface
-ag2tracer launch
+            <div class="code-block">
+              <div class="code-block-header">
+                <span class="code-lang-badge">Terminal</span>
+              </div>
+              <pre class="quickstart-code"><code><span class="tk-comment"># Launch the web interface</span>
+<span class="tk-command">ag2tracer</span> launch
 
-# Or run in background
-ag2tracer launch --daemon
+<span class="tk-comment"># Or run in background</span>
+<span class="tk-command">ag2tracer</span> launch <span class="tk-flag">--daemon</span>
 
-# Management commands
-ag2tracer status    # check if server is running
-ag2tracer logs -f   # follow logs
-ag2tracer stop      # stop the background server</code></pre>
+<span class="tk-comment"># Management commands</span>
+<span class="tk-command">ag2tracer</span> status    <span class="tk-comment"># check if server is running</span>
+<span class="tk-command">ag2tracer</span> logs <span class="tk-flag">-f</span>   <span class="tk-comment"># follow logs</span>
+<span class="tk-command">ag2tracer</span> stop      <span class="tk-comment"># stop the background server</span></code></pre>
+            </div>
             <p class="quickstart-desc">Then open <code>http://127.0.0.1:8500</code> to upload traces and run attribution interactively.</p>
           </div>
 
