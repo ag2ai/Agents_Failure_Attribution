@@ -161,148 +161,289 @@
         </div>
       </div>
 
-      <!-- Leaderboard Section -->
-      <div class="leaderboard-container" data-aos="fade-up" data-aos-duration="1000">
-        <h2 class="title is-3 leaderboard-title">Leaderboard</h2>
-        <p class="leaderboard-subtitle">Performance comparison of failure attribution methods across different settings (GPT-4o as the backbone).</p>
-        <div class="leaderboard-table-wrapper">
-          <table class="leaderboard-table">
-            <thead>
-              <tr>
-                <th rowspan="2" class="th-method">Method</th>
-                <th rowspan="2" class="th-metric">Metric</th>
-                <th colspan="2" class="th-group">With Ground Truth</th>
-                <th colspan="2" class="th-group">Without Ground Truth</th>
-              </tr>
-              <tr>
-                <th class="th-sub">Algorithm Generated</th>
-                <th class="th-sub">Hand Crafted</th>
-                <th class="th-sub">Algorithm Generated</th>
-                <th class="th-sub">Hand Crafted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="2" class="td-method">Random</td>
-                <td class="td-metric">Agent-Level Accuracy</td>
-                <td>29.10</td>
-                <td>12.00</td>
-                <td>29.10</td>
-                <td>12.00</td>
-              </tr>
-              <tr>
-                <td class="td-metric">Step-Level Accuracy</td>
-                <td>19.06</td>
-                <td>4.16</td>
-                <td>19.06</td>
-                <td>4.16</td>
-              </tr>
-              <tr>
-                <td rowspan="2" class="td-method">All-at-Once</td>
-                <td class="td-metric">Agent-Level Accuracy</td>
-                <td class="best">54.33</td>
-                <td class="best">55.17</td>
-                <td class="best">51.12</td>
-                <td class="best">53.44</td>
-              </tr>
-              <tr>
-                <td class="td-metric">Step-Level Accuracy</td>
-                <td>12.50</td>
-                <td>5.26</td>
-                <td>13.53</td>
-                <td>3.51</td>
-              </tr>
-              <tr>
-                <td rowspan="2" class="td-method">Step-by-Step</td>
-                <td class="td-metric">Agent-Level Accuracy</td>
-                <td>35.20</td>
-                <td>34.48</td>
-                <td>26.02</td>
-                <td>32.75</td>
-              </tr>
-              <tr>
-                <td class="td-metric">Step-Level Accuracy</td>
-                <td class="best">25.51</td>
-                <td class="best">7.02</td>
-                <td>15.31</td>
-                <td class="best">8.77</td>
-              </tr>
-              <tr>
-                <td rowspan="2" class="td-method">Binary Search</td>
-                <td class="td-metric">Agent-Level Accuracy</td>
-                <td>44.13</td>
-                <td>51.72</td>
-                <td>30.11</td>
-                <td>36.21</td>
-              </tr>
-              <tr>
-                <td class="td-metric">Step-Level Accuracy</td>
-                <td>23.98</td>
-                <td>6.90</td>
-                <td class="best">16.59</td>
-                <td>6.90</td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Section Tabs -->
+      <div class="section-tabs" data-aos="fade-up" data-aos-duration="800">
+        <button class="section-tab active" data-target="section-demo">
+          <i class="fas fa-play-circle"></i> Demo
+        </button>
+        <button class="section-tab" data-target="section-quickstart">
+          <i class="fas fa-rocket"></i> Quick Start
+        </button>
+        <button class="section-tab" data-target="section-leaderboard">
+          <i class="fas fa-trophy"></i> Leaderboard
+        </button>
+      </div>
+
+      <!-- Demo Section -->
+      <div id="section-demo" class="tab-content active" data-aos="fade-up" data-aos-duration="1000">
+        <div class="demo-container">
+          <!-- Demo Video -->
+          <div class="demo-video-wrapper">
+            <video class="demo-video" controls playsinline>
+              <source src="./static/demo/demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Case Study Gallery -->
+          <div class="case-display">
+            <div class="case-panel">
+              <div class="panel-header">
+                <i class="fas fa-route"></i> Agent Trajectory
+              </div>
+              <div class="panel-content">
+                <div class="question-box" id="case-question">
+                  <div class="question-label">Task</div>
+                  <div id="question-text">Loading...</div>
+                </div>
+                <div class="trajectory-container" id="trajectory-content">
+                  Loading trajectory...
+                </div>
+              </div>
+            </div>
+
+            <div class="transform-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="case-panel">
+              <div class="panel-header">
+                <i class="fas fa-crosshairs"></i> Failure Attribution
+              </div>
+              <div class="panel-content">
+                <div class="attribution-result" id="attribution-content">
+                  <div class="attribution-item">
+                    <div class="attribution-label">Failure-Responsible Agent</div>
+                    <div class="attribution-value agent" id="mistake-agent">Loading...</div>
+                  </div>
+                  <div class="attribution-item">
+                    <div class="attribution-label">Decisive Error Step</div>
+                    <div class="attribution-value step" id="mistake-step">Loading...</div>
+                  </div>
+                  <div class="attribution-item">
+                    <div class="attribution-label">Reason</div>
+                    <div class="attribution-value" id="mistake-reason">Loading...</div>
+                  </div>
+                  <div class="attribution-item">
+                    <div class="attribution-label">Ground Truth Answer</div>
+                    <div class="attribution-value" id="ground-truth">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-thumbnails">
+            <div class="case-thumb active" data-case="1">Case 1</div>
+            <div class="case-thumb" data-case="2">Case 2</div>
+            <div class="case-thumb" data-case="3">Case 3</div>
+            <div class="case-thumb" data-case="4">Case 4</div>
+            <div class="case-thumb" data-case="5">Case 5</div>
+          </div>
         </div>
       </div>
 
-      <!-- Case Study Gallery -->
-      <div class="case-gallery-container" data-aos="fade-up" data-aos-duration="1000">
-        
-        <div class="case-display">
-          <div class="case-panel">
-            <div class="panel-header">
-              <i class="fas fa-route"></i> Agent Trajectory
+      <!-- Quick Start Section -->
+      <div id="section-quickstart" class="tab-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="quickstart-container">
+
+          <div class="quickstart-step">
+            <div class="quickstart-step-header">
+              <span class="quickstart-step-number">1</span>
+              <span class="quickstart-step-title">Install</span>
             </div>
-            <div class="panel-content">
-              <div class="question-box" id="case-question">
-                <div class="question-label">Task</div>
-                <div id="question-text">Loading...</div>
-              </div>
-              <div class="trajectory-container" id="trajectory-content">
-                Loading trajectory...
-              </div>
+            <pre class="quickstart-code"><code>pip install ag2tracer</code></pre>
+          </div>
+
+          <div class="quickstart-step">
+            <div class="quickstart-step-header">
+              <span class="quickstart-step-number">2</span>
+              <span class="quickstart-step-title">Set API Key</span>
+            </div>
+            <pre class="quickstart-code"><code>export OPENAI_API_KEY="your-openai-key"
+# Optional: other providers
+export ANTHROPIC_API_KEY="your-anthropic-key"
+export GOOGLE_API_KEY="your-google-key"</code></pre>
+          </div>
+
+          <div class="quickstart-step">
+            <div class="quickstart-step-header">
+              <span class="quickstart-step-number">3</span>
+              <span class="quickstart-step-title">Prepare Your Trace</span>
+            </div>
+            <p class="quickstart-desc">Your trace JSON must contain a <code>"history"</code> or <code>"conversation"</code> array:</p>
+            <pre class="quickstart-code"><code>{
+  "history": [
+    {"role": "assistant", "name": "Excel_Expert", "content": "Let me analyze..."},
+    {"role": "user", "name": "Computer_terminal", "content": "exitcode: 0 ..."},
+    {"role": "user", "name": "DataVerification_Expert", "content": "TERMINATE"}
+  ],
+  "question": "optional problem description",
+  "ground_truth": "optional expected answer"
+}</code></pre>
+          </div>
+
+          <div class="quickstart-step">
+            <div class="quickstart-step-header">
+              <span class="quickstart-step-number">4a</span>
+              <span class="quickstart-step-title">Use the Python API</span>
+            </div>
+            <pre class="quickstart-code"><code>import json
+from ag2tracer import all_at_once, step_by_step, binary_search
+
+with open("trace.json") as f:
+    trace = json.load(f)
+
+# Choose a method
+result = all_at_once(trace, model="gpt-4o")
+# result = step_by_step(trace, model="gpt-4o")
+# result = binary_search(trace, model="gpt-4o")
+
+print(f"Agent: {result.agent_name}")
+print(f"Step:  {result.step_number}")
+print(f"Reason: {result.reason}")</code></pre>
+          </div>
+
+          <div class="quickstart-step">
+            <div class="quickstart-step-header">
+              <span class="quickstart-step-number">4b</span>
+              <span class="quickstart-step-title">Or Launch the Web UI</span>
+            </div>
+            <pre class="quickstart-code"><code># Launch the web interface
+ag2tracer launch
+
+# Or run in background
+ag2tracer launch --daemon
+
+# Management commands
+ag2tracer status    # check if server is running
+ag2tracer logs -f   # follow logs
+ag2tracer stop      # stop the background server</code></pre>
+            <p class="quickstart-desc">Then open <code>http://127.0.0.1:8500</code> to upload traces and run attribution interactively.</p>
+          </div>
+
+          <div class="quickstart-step">
+            <div class="quickstart-step-header">
+              <span class="quickstart-step-number">5</span>
+              <span class="quickstart-step-title">Attribution Methods</span>
+            </div>
+            <div class="methods-table-wrapper">
+              <table class="methods-table">
+                <thead>
+                  <tr>
+                    <th>Method</th>
+                    <th>Description</th>
+                    <th>LLM Calls</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>All-at-Once</strong></td>
+                    <td>Feeds entire conversation to the LLM</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Step-by-Step</strong></td>
+                    <td>Evaluates each step sequentially, stops at first error</td>
+                    <td>Up to N</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Binary Search</strong></td>
+                    <td>Recursively narrows down the error location</td>
+                    <td>O(log N)</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
 
-          <div class="transform-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-
-          <div class="case-panel">
-            <div class="panel-header">
-              <i class="fas fa-crosshairs"></i> Failure Attribution
-            </div>
-            <div class="panel-content">
-              <div class="attribution-result" id="attribution-content">
-                <div class="attribution-item">
-                  <div class="attribution-label">Failure-Responsible Agent</div>
-                  <div class="attribution-value agent" id="mistake-agent">Loading...</div>
-                </div>
-                <div class="attribution-item">
-                  <div class="attribution-label">Decisive Error Step</div>
-                  <div class="attribution-value step" id="mistake-step">Loading...</div>
-                </div>
-                <div class="attribution-item">
-                  <div class="attribution-label">Reason</div>
-                  <div class="attribution-value" id="mistake-reason">Loading...</div>
-                </div>
-                <div class="attribution-item">
-                  <div class="attribution-label">Ground Truth Answer</div>
-                  <div class="attribution-value" id="ground-truth">Loading...</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
 
-        <div class="case-thumbnails">
-          <div class="case-thumb active" data-case="1">Case 1</div>
-          <div class="case-thumb" data-case="2">Case 2</div>
-          <div class="case-thumb" data-case="3">Case 3</div>
-          <div class="case-thumb" data-case="4">Case 4</div>
-          <div class="case-thumb" data-case="5">Case 5</div>
+      <!-- Leaderboard Section -->
+      <div id="section-leaderboard" class="tab-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="leaderboard-container">
+          <p class="leaderboard-subtitle">Performance comparison of failure attribution methods across different settings (GPT-4o as the backbone).</p>
+          <div class="leaderboard-table-wrapper">
+            <table class="leaderboard-table">
+              <thead>
+                <tr>
+                  <th rowspan="2" class="th-method">Method</th>
+                  <th rowspan="2" class="th-metric">Metric</th>
+                  <th colspan="2" class="th-group">With Ground Truth</th>
+                  <th colspan="2" class="th-group">Without Ground Truth</th>
+                </tr>
+                <tr>
+                  <th class="th-sub">Algorithm Generated</th>
+                  <th class="th-sub">Hand Crafted</th>
+                  <th class="th-sub">Algorithm Generated</th>
+                  <th class="th-sub">Hand Crafted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="td-method">Random</td>
+                  <td class="td-metric">Agent-Level Accuracy</td>
+                  <td>29.10</td>
+                  <td>12.00</td>
+                  <td>29.10</td>
+                  <td>12.00</td>
+                </tr>
+                <tr>
+                  <td class="td-metric">Step-Level Accuracy</td>
+                  <td>19.06</td>
+                  <td>4.16</td>
+                  <td>19.06</td>
+                  <td>4.16</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="td-method">All-at-Once</td>
+                  <td class="td-metric">Agent-Level Accuracy</td>
+                  <td class="best">54.33</td>
+                  <td class="best">55.17</td>
+                  <td class="best">51.12</td>
+                  <td class="best">53.44</td>
+                </tr>
+                <tr>
+                  <td class="td-metric">Step-Level Accuracy</td>
+                  <td>12.50</td>
+                  <td>5.26</td>
+                  <td>13.53</td>
+                  <td>3.51</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="td-method">Step-by-Step</td>
+                  <td class="td-metric">Agent-Level Accuracy</td>
+                  <td>35.20</td>
+                  <td>34.48</td>
+                  <td>26.02</td>
+                  <td>32.75</td>
+                </tr>
+                <tr>
+                  <td class="td-metric">Step-Level Accuracy</td>
+                  <td class="best">25.51</td>
+                  <td class="best">7.02</td>
+                  <td>15.31</td>
+                  <td class="best">8.77</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="td-method">Binary Search</td>
+                  <td class="td-metric">Agent-Level Accuracy</td>
+                  <td>44.13</td>
+                  <td>51.72</td>
+                  <td>30.11</td>
+                  <td>36.21</td>
+                </tr>
+                <tr>
+                  <td class="td-metric">Step-Level Accuracy</td>
+                  <td>23.98</td>
+                  <td>6.90</td>
+                  <td class="best">16.59</td>
+                  <td>6.90</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -464,6 +605,19 @@
         easing: 'ease-in-out',
         once: false,
         mirror: false
+      });
+
+      // Section tab switching
+      const sectionTabs = document.querySelectorAll('.section-tab');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      sectionTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          sectionTabs.forEach(t => t.classList.remove('active'));
+          tabContents.forEach(c => c.classList.remove('active'));
+          this.classList.add('active');
+          document.getElementById(this.dataset.target).classList.add('active');
+        });
       });
 
       // Case Study Gallery - Data loaded from caseData.js
