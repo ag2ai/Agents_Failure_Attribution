@@ -99,6 +99,7 @@ Datasets with ground-truth annotations for evaluating failure attribution method
 | **TracerTraj** | Counterfactual replay dataset for fine-grained error diagnosis | 2025 | [[Paper]](https://arxiv.org/abs/2509.03312) |
 | **TRAIL** | Long-context agentic traces with 20+ error types | 2025 | [[Paper]](https://arxiv.org/abs/2505.08638) [[Code]](https://github.com/patronus-ai/trail-benchmark) |
 | **OpenRCA** | Software failure logs with telemetry data (logs, metrics, traces) | 2025 | [[Paper]](https://openreview.net/forum?id=M4qNIzQYpd) [[Code]](https://github.com/microsoft/OpenRCA) |
+| **MAESTRO: Multi-Agent Evaluation Suite for Testing, Reliability, and Observability** | arXiv | 2026 | [[Paper]](https://arxiv.org/abs/2601.00481) [[Code]](https://github.com/sands-lab/maestro) |
 
 ---
 
