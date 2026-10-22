@@ -85,9 +85,9 @@ def evaluate_accuracy(predictions, data_path, total_files):
             actual_agent, actual_step = read_actual_data(labeled_file)
 
             if actual_agent is not None and actual_step is not None:
-                if actual_agent in pred['predicted_agent'] :
+                if actual_agent == pred['predicted_agent']:
                     correct_agent += 1
-                if actual_step in pred['predicted_step'] :
+                if actual_step == pred['predicted_step']:
                     correct_step += 1
             else:
                  print(f"Skipping evaluation for {idx} due to issues reading actual data.")
